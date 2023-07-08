@@ -48,4 +48,3 @@ yarn lint
 # pishgaman
 =======
 # PishgamanProjectG2-Project-
->>>>>>> 93c88a5 (Initial commit)
