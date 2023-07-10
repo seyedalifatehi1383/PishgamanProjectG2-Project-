@@ -3,7 +3,6 @@
         <div class="modal-bg" @click="bgClick"></div>
         <div class="modal-container">
             <div class="modal-title">
-                title
                 <slot name="title"></slot>
             </div>
             <div class="modal-content">
@@ -11,7 +10,7 @@
                 <slot name="content"></slot>
             </div>
             <div class="modal-footer">
-                <img src="../images/IRAN_SKYLINE.png" alt="">
+                <img src="../images/IRAN_SKYLINE.png" alt="iran_skyline">
             </div>
         </div>
     </div>
@@ -45,7 +44,7 @@ const bgClick = () => {
     align-items: center;
 }
 .modal-bg {
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -58,16 +57,25 @@ const bgClick = () => {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 960px;
+    width: 1000px;
+    border: none;
+    border-radius: 10px;
+
 }
+
 .modal-title {
-    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
 }
 
 .modal-footer img {
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: -1;
+    z-index: -4;
+    margin:0 auto;
 }
+
+
 </style>
