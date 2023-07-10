@@ -1,37 +1,73 @@
 <template>
-    <div class="backdrop" @click.self="closeModal">
-        <div class="chooseCityModal">
-            <slot></slot>
+    <div v-if="isVisible" class="modal">
+        <div class="modal-bg" @click="bgClick"></div>
+        <div class="modal-container">
+            <div class="modal-title">
+                title
+                <slot name="title"></slot>
+            </div>
+            <div class="modal-content">
+                context
+                <slot name="content"></slot>
+            </div>
+            <div class="modal-footer">
+                <img src="../images/IRAN_SKYLINE.png" alt="">
+            </div>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-// const nameFunc = (var: inputType): returnType => {...}
+withDefaults(defineProps<{isVisible: boolean}>(), {
+  isVisible: false
+})
+const emit = defineEmits<{
+    (e: "update:isVisible", value: boolean): void,
+}>();
 
-const closeModal = () => {
-    
+const bgClick = () => {
+    console.log("[Modal] bg click")
+    emit('update:isVisible', false);
 }
-
 
 </script>
 
 <style>
-.chooseCityModal {
-    width: 400px;
-    margin: 100px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-}
-
-.backdrop {
-    top: 0;
+.modal {
     position: fixed;
-    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-bg {
+    background-color: rgba(0,0,0,.4);
     width: 100%;
     height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+.modal-container {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 960px;
+}
+.modal-title {
+    background-color: lightgray;
 }
 
-
+.modal-footer img {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
 </style>

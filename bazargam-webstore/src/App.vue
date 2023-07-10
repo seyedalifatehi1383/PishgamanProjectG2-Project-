@@ -1,23 +1,33 @@
 <script setup lang="ts">
-  import ChooseCity from './components/ChooseCity.vue';
   import { ref } from 'vue';
-
-  let showModal = ref(true),
-
-  changeModal = () => {
-      showModal = ref(!showModal)
-  }
+  import ChooseCity from './components/ChooseCity.vue'
+  // import Modal from './components/Modal.vue'
+  const modalIsVisible = ref(true);
+  
 </script>
 
 <template>
+  <!-- <button @click="modalIsVisible=true">OpenModal</button> -->
+  <!-- <Modal v-model="modalIsVisible" >
+    <template v-slot:title>
+      Here is title from app.vue
+    </template>
+    <template v-slot:content>
+      The content form app.vue
+    </template>
+  </Modal> -->
 
 <!-- this teleport tag is the context of the choose city modal -->
-  <teleport to=".chooseCityModal" v-if="showModal" >
-    <ChooseCity @close="changeModal">  
-      <h1> a simple text </h1>
-      
-    </ChooseCity>    
-  </teleport>
+  <ChooseCity v-model:isVisible="modalIsVisible">  
+    <template v-slot:title>
+      Here is title from app.vue
+    </template>
+    <template v-slot:content>
+      The content form app.vue
+    </template>
+  </ChooseCity>    
+  
+
 </template>
 
 <style scoped>
