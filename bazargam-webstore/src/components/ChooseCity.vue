@@ -2,15 +2,15 @@
     <div v-if="isVisible" class="modal">
         <div class="modal-bg" @click="bgClick"></div>
         <div class="modal-container">
+            <img class="backdrop-img" src="../images/IRAN_SKYLINE.png" alt="iran_skyline">
+            
             <div class="modal-title">
                 <slot name="title"></slot>
             </div>
+
             <div class="modal-content">
                 context
                 <slot name="content"></slot>
-            </div>
-            <div class="modal-footer">
-                <img src="../images/IRAN_SKYLINE.png" alt="iran_skyline">
             </div>
         </div>
     </div>
@@ -43,6 +43,7 @@ const bgClick = () => {
     justify-content: center;
     align-items: center;
 }
+
 .modal-bg {
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
@@ -52,14 +53,19 @@ const bgClick = () => {
     left: 0;
     z-index: 1;
 }
+
 .modal-container {
     z-index: 10;
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 1000px;
+    /* max-width: 900px; */
+    min-width: 1500px;
+    width: 80%;
     border: none;
     border-radius: 10px;
+    height: 400px;
+    position: relative;
 
 }
 
@@ -69,13 +75,12 @@ const bgClick = () => {
     text-align: right;
 }
 
-.modal-footer img {
+.backdrop-img {
+    position: absolute;
     bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: -4;
-    margin:0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: inherit;
+    z-index: -1;
 }
-
-
 </style>
