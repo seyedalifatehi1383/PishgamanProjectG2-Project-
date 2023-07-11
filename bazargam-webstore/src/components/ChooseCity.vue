@@ -5,7 +5,7 @@
             <img class="backdrop-img" src="../images/IRAN_SKYLINE.png" alt="iran_skyline">
             
             <div class="modal-title">
-                <slot name="title"></slot>
+                <slot name="title" class="title-content"></slot>
             </div>
 
             <div class="modal-content">
@@ -59,14 +59,12 @@ const bgClick = () => {
     display: flex;
     flex-direction: column;
     background-color: white;
-    /* max-width: 900px; */
-    min-width: 1500px;
+    max-width: 1500px;
     width: 80%;
     border: none;
     border-radius: 10px;
     height: 400px;
     position: relative;
-
 }
 
 .modal-title {
@@ -82,5 +80,11 @@ const bgClick = () => {
     box-sizing: border-box;
     border-radius: inherit;
     z-index: -1;
+}
+
+.title-content {
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: inherit;
 }
 </style>
