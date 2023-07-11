@@ -86,5 +86,7 @@ const bgClick = () => {
 
 .modal-content {
     display: grid;
+    padding: 0 30px;
+    margin: 0;
 }
 </style>
