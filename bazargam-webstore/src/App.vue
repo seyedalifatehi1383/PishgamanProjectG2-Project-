@@ -23,7 +23,17 @@
     </template>
 
     <template v-slot:content>
-      <!-- The content form app.vue -->
+      <a href="#">
+        <div class="cityBox">
+          <h4> تهران </h4>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="cityBox">
+          <h4> یزد </h4>
+        </div>
+      </a>          
     </template>
   </ChooseCity>    
   
@@ -57,5 +67,15 @@ p {
 }
 .title-text{
   text-align: right;
+}
+
+.cityBox {
+  margin: 0!important;
+  padding: 0;
+}
+
+.cityBox h4 {
+  margin: 0;
+  padding: 0;
 }
 </style>
