@@ -8,14 +8,24 @@
   <!-- this component is the context of the choose city modal (from S.A.F.) -->
   <ChooseCity v-model:isVisible="modalIsVisible">  
     <template v-slot:title>
-      <h3 id="modal-title-content-h3"> انتخاب شهر </h3>
-      <p> .برای مشاهده محصولات ابتدا شهر خود را مشخص کنید </p>
-      <img src="./images/logo.png" alt="logo" class="title-logo">
+    <div class="choosecity-title-container">
+     
+
+        <div class="title-text">
+          <h3 id="modal-title-content-h3"> انتخاب شهر </h3>
+          <p> .برای مشاهده محصولات ابتدا شهر خود را مشخص کنید </p>
+        </div>
+     
+        <div>
+          <img src="./images/logo.png" alt="logo" class="title-logo">
+        </div>
+      </div>
     </template>
+
     <template v-slot:content>
-      The content form app.vue
+      <!-- The content form app.vue -->
     </template>
-  </ChooseCity>
+  </ChooseCity>    
   
 
 </template>
@@ -23,26 +33,29 @@
 <style scoped>
 #modal-title-content-h3 {
   color: #209d43;
-  justify-content: right;
-}
-
-h3 {
-  background-color: aqua;
-  margin: 20px 50px;
+  margin: 0;
   padding: 0;
-  clear: left;
 }
 
 p {
-  background-color: blueviolet;
   margin: 0;
   padding: 0;
-  clear: left;
 }
 
 .title-logo {
+  overflow: auto;
   width: 87px;
   height: 39.5px;
   float: left;
+}
+.choosecity-title-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+.title-text{
+  text-align: right;
 }
 </style>
