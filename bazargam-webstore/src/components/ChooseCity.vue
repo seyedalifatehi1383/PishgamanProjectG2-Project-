@@ -9,7 +9,6 @@
             </div>
 
             <div class="modal-content">
-                <!-- context -->
                 <slot name="content"></slot>
             </div>
         </div>
@@ -64,6 +63,7 @@ const bgClick = () => {
     border: none;
     border-radius: 10px;
     min-height: 400px;
+    max-height: 800px;
     position: relative;
 }
 
@@ -85,8 +85,8 @@ const bgClick = () => {
 }
 
 .modal-content {
-    display: grid;
     padding: 0 30px;
     margin: 0;
+    overflow: scroll;
 }
 </style>
