@@ -3,13 +3,13 @@
         <div class="modal-bg" @click="bgClick"></div>
         <div class="modal-container">
             <img class="backdrop-img" src="../images/IRAN_SKYLINE.png" alt="iran_skyline">
-            
+
             <div class="modal-title">
-                <slot name="title" class="title-content"></slot>
+                <slot name="title"></slot>
             </div>
 
             <div class="modal-content">
-                context
+                <!-- context -->
                 <slot name="content"></slot>
             </div>
         </div>
@@ -31,7 +31,7 @@ const bgClick = () => {
 
 </script>
 
-<style>
+<style scoped>
 .modal {
     position: fixed;
     top: 0;
@@ -63,14 +63,16 @@ const bgClick = () => {
     width: 80%;
     border: none;
     border-radius: 10px;
-    height: 400px;
+    min-height: 400px;
     position: relative;
 }
 
 .modal-title {
+    text-align: center;
+    color: #4f4f4f;
     display: flex;
-    flex-direction: column;
-    text-align: right;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .backdrop-img {
@@ -82,9 +84,7 @@ const bgClick = () => {
     z-index: -1;
 }
 
-.title-content {
-    position: absolute;
-    box-sizing: border-box;
-    border-radius: inherit;
+.modal-content {
+    display: grid;
 }
 </style>
