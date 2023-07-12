@@ -19,6 +19,7 @@
 withDefaults(defineProps<{isVisible: boolean}>(), {
   isVisible: false
 })
+
 const emit = defineEmits<{
     (e: "update:isVisible", value: boolean): void,
 }>();
@@ -63,7 +64,7 @@ const bgClick = () => {
     border: none;
     border-radius: 10px;
     min-height: 400px;
-    max-height: 800px;
+    max-height: 720px;
     position: relative;
 }
 
