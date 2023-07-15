@@ -1,0 +1,10 @@
+{
+    "products" :[
+
+        {"title":"گوجه" ,"id":1 ,"details":"سبزیجات","price":"15000" ,"img":""},
+        {"title":"برنج" ,"id":2 ,"details":"خوراکی","price":"15000" ,"img":""},
+        {"title":"نان" ,"id":3 ,"details":"خوراکی","price":"15000" ,"img":""},
+        {"title":"پیاز" ,"id":4 ,"details":"سبزیجات","price":"15000" ,"img":""},
+        {"title":"کاهو" ,"id":5 ,"details":"سبزیجات","price":"15000" ,"img":""}
+    ]
+}
