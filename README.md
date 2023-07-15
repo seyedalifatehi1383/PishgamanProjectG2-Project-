@@ -45,5 +45,4 @@ yarn build
 yarn lint
 ```
 # pishgaman
-=======
 # PishgamanProjectG2-Project-
