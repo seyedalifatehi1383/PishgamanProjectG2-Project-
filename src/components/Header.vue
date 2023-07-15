@@ -35,9 +35,9 @@
       </router-link>
     </div>
     <div >
-      <router-link to=""  class="links">
+      <router-link to="/"  class="links">
         <img src="../assets/icon1.png" width="15px" height="15px" >
-        راهنما و خدمات
+        Home
       </router-link>
       <router-link to="/news" class="links">
         اخبار
