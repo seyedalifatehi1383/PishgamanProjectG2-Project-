@@ -228,6 +228,55 @@ export const cities = [
         title: "خرم آباد",
         name: "khorramabad",
         link: "#/khorramabad"
+    },
+
+    {
+        id: 34,
+        title: "بهمئی",
+        name: "behmaei",
+        link: "#/behmaei"
+    },
+
+    {
+        id: 35,
+        title: "گچساران",
+        name: "gachsaran",
+        link: "#/gachsaran"
+    },
+
+    {
+        id: 36,
+        title: "دهدشت",
+        name: "dehdasht",
+        link: "#/dehdasht"
+    },
+
+    {
+        id: 37,
+        title: "گلبهار, چناران",
+        name: "golbahar",
+        link: "#/golbahar"
+    },
+
+    {
+        id: 38,
+        title: "طرقبه, شاندیز",
+        name: "shandiz",
+        link: "#/shandiz"
+    },
+
+    {
+        id: 39,
+        title: "فریمان",
+        name: "fariman",
+        link: "#/fariman"
+    },
+
+    {
+        id: 40,
+        title: "ملک آباد, بینالود",
+        name: "malekabad",
+        link: "#/malekabad"
     }
 ]
 

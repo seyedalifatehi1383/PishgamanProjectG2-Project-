@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
     import Banners from './Banners.vue';
-    import BazargamDiscount from './BazargamDiscount.vue';
+    import BazargamDiscount from './BazargamDiscount/BazargamDiscount.vue';
 
     // function seraj(arg1?:string, arg2?:string): void{
     //     console.log(arg1, arg2)

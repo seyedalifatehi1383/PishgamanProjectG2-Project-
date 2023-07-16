@@ -5,11 +5,11 @@
         </div>
 
         <div class="products-discount">
-            <div class="lettuce-product">
+            <div class="lettuce-product" v-for="product in discountProducts">
                 <img src="../../images/K.jpeg" alt="lettuce product">
                 <caption class="price-product">
                     <p> قیمت: ۵۰۰۰ تومان </p>
-                    <button> خرید کالا </button>
+                    <button @click=""> خرید کالا </button>
                 </caption>
             </div>
 
@@ -49,6 +49,12 @@
 </template>
 
 <script setup lang="ts">
+    mounted() {
+        fetch('http://localhost:3000/jobs')
+            .then(res => res.json())
+            .then(data => this.jobs = data)
+            .catch(err => console.log(err.message))
+    }
 </script>
 
 <style scoped>
