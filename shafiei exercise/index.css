@@ -1,0 +1,79 @@
+*{
+    direction: rtl;
+}
+
+.int{
+    margin-left: 20px;
+}
+
+.sent{
+color: black;
+text-decoration: none;
+margin: 15px;
+}
+
+#red{
+    color: red;
+}
+.send{
+background-color: blue;
+color: white;
+}
+
+.first-heder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right-side{
+    align-items: center;
+    display: flex;
+}
+
+.center{
+    display: flex;
+    font-weight: 40px;
+    
+    
+}
+
+.left.side{
+display: flex;
+}
+
+.cou {
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.log{
+    width: 200px;
+
+}
+.search{
+width: 1000px;
+height: 25px;
+position: relative;
+    left: 250px;
+    top: 30px;
+
+}
+
+.secend-heder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.margin{
+    margin-right: 12px;
+}
+
+#green{
+    color: green;
+    position: relative;
+    bottom:20px;
+    
+}
