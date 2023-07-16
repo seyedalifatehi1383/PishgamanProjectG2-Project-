@@ -4,19 +4,14 @@
         
         <br />
         
-        <div class="products-container" style="display: flex; justify-content: center;">
-            <h2 class="heading"> محصولات تنظیم بازار </h2>    
-        </div>
-
+        <BazargamDiscount />
     </div>
 </template>
 
 <script setup lang="ts">
     import Banners from './Banners.vue';
+    import BazargamDiscount from './BazargamDiscount.vue';
 </script>
 
 <style scoped>
-    .heading {
-        text-align: center;
-    }
 </style>
