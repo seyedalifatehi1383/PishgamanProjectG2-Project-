@@ -56,7 +56,11 @@
       </router-link>
     </div>
   </div>
-  <div id="serch" ></div>
+  <br>
+  <p class="panel" >
+    <router-link to=""> خوراکی </router-link>
+    <router-link to=""> سبزیجات</router-link>
+  </p>
 </header>
 </template>
 
@@ -118,6 +122,10 @@ header {
   background-color: aliceblue;
   border-radius: 8px;
 }
+.shrch{
+  display: block;
+
+}
  /*#city div{
   width: 20px;
   height: 20px;
@@ -150,21 +158,26 @@ header input{
   border-radius: 5px;
   border-color: rgb(29, 202, 29);
   
-}
+}*/
 .panel{
   width: 800px;
   height: 30px;
   background-color: white;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: 200px;
   border-radius: 20px;
   padding: 15px;
 }
 
+.panel a{
+ text-decoration: none;
+ color: #000;
+ margin: 20px;
+} 
 .panel a:hover{
   background-color: rgb(19, 199, 64);
   padding-top: 15px;
   padding-bottom: 29px;
-} */
+} 
 
 </style>
