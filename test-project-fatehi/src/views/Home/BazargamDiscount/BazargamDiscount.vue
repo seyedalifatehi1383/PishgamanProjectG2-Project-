@@ -5,8 +5,8 @@
         </div>
 
         <div class="products-discount">
-            <div class="lettuce-product" v-for="product in discountProducts">
-                <img src="../../images/K.jpeg" alt="lettuce product">
+            <div class="lettuce-product">
+                <img src="../../../images/K.jpeg" alt="lettuce product">
                 <caption class="price-product">
                     <p> قیمت: ۵۰۰۰ تومان </p>
                     <button @click=""> خرید کالا </button>
@@ -14,7 +14,7 @@
             </div>
 
             <div class="tomato-product">
-                <img src="../../images/t.jpeg" alt="tomato product">
+                <img src="../../../images/t.jpeg" alt="tomato product">
                 <caption class="price-product">
                     <p> قیمت: ۵۰۰۰ تومان </p>
                     <button> خرید کالا </button>
@@ -22,7 +22,7 @@
             </div>
 
             <div class="rice-product">
-                <img src="../../images/b.jpeg" alt="rice product">
+                <img src="../../../images/b.jpeg" alt="rice product">
                 <caption class="price-product">
                     <p> قیمت: ۵۰۰۰ تومان </p>
                     <button> خرید کالا </button>
@@ -30,7 +30,7 @@
             </div>
 
             <div class="onion-product">
-                <img src="../../images/p.jpeg" alt="onion product">
+                <img src="../../../images/p.jpeg" alt="onion product">
                 <caption class="price-product">
                     <p> قیمت: ۵۰۰۰ تومان </p>
                     <button> خرید کالا </button>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="bread-product">
-                <img src="../../images/n.jpeg" alt="bread product">
+                <img src="../../../images/n.jpeg" alt="bread product">
                 <caption class="price-product">
                     <p> قیمت: ۵۰۰۰ تومان </p>
                     <button> خرید کالا </button>
@@ -50,9 +50,9 @@
 
 <script setup lang="ts">
     mounted() {
-        fetch('http://localhost:3000/jobs')
+        fetch('http://localhost:5173/#/:id')
             .then(res => res.json())
-            .then(data => this.jobs = data)
+            .then(data => this.discountProducts = data)
             .catch(err => console.log(err.message))
     }
 </script>
