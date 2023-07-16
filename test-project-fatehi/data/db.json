@@ -1,6 +1,8 @@
 {
     "discountProducts": [
-        {"title": "bread", "id": 1, "price": 5000, },
-        {""}
+        {"title": "bread", "id": 1, "price": 5000, "src": "../src/images/n.jpeg"},
+        {"title": "lettuce", "id": 2, "price": 5000, "src": "../src/images/K.jpeg"},
+        {"title": "onion", "id": 3, "price": 5000, "src": "../src/images/p.jpeg"},
+        {"title": "tomate", "id": 4, "price": 5000, "src": "../src/images/t.jpeg"}
     ]
 }

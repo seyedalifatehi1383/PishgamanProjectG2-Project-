@@ -49,6 +49,8 @@
 </template>
 
 <script setup lang="ts">
+    discountProducts: []
+
     mounted() {
         fetch('http://localhost:5173/#/:id')
             .then(res => res.json())
