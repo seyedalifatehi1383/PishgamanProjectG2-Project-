@@ -6,11 +6,13 @@
 
     <div v-for="discount in state.discountProducts" class="products-discount">
         <img :src="discount.src" :alt="discount.title" />
-          <caption class="price-product">
-            <p>قیمت: {{ discount.price }} تومان</p>
-            <button @click="">خرید کالا</button>
-          </caption>
+        
+        <caption class="price-product">
+          <p>قیمت: {{ discount.price }} تومان</p>
+          <button @click="">خرید کالا</button>
+        </caption>
     </div>
+
     <!-- <div v-for="discount in state.discountProducts" class="products-discount">
         <div class="lettuce-product">
           <img :src="discount.src" :alt="discount.title" />
@@ -52,6 +54,7 @@
         </caption>
       </div>
     </div> -->
+
   </div>
 </template>
 
@@ -84,17 +87,13 @@ onMounted(() => {
   margin: auto 50px;
   border-radius: 10px;
   display: flex;
+  /* grid-template-columns: repeat(10, 30px [col-start]); */
 }
 
-.products-discount {
-  display: grid;
-  grid-template-columns: repeat(10, 300px [col-start]);
-}
-
-.products-discount div {
+/* .products-discount div {
   width: 50px;
   height: 50px;
-}
+} */
 
 .products-discount-title {
   display: inline-block;
