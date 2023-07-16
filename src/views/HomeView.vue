@@ -1,11 +1,11 @@
 <template>
   <div  v-for="product in products" :key="product.id " class="products">
-    <div class="product"></div>
-    <router-link to=""><h1>{{product.title}}</h1></router-link>
+    <h1>{{product.title}}</h1>
     <h3>{{ product.price }}</h3>
     <h3>{{ product.details }}</h3>
+     <router-link :to="{name:'ProductDetail',params:{id:product.id}}">خرید</router-link> 
   </div>
-</template>
+</template> 
 
 <script>
 export default {
@@ -25,10 +25,20 @@ mounted(){
 
 <style>
 .products{
-  background-color: bisque;
+  background-color: rgb(196, 255, 228);
   display: inline-block;
   width: 200px;
   height: 200px;
+  border:rgb(89, 216, 51)  5px solid;
+  border-radius: 5px;
+  margin: 30px;
+  text-align: center;
+}
+.products a{
+  text-decoration: none;
+  background-color: green;
+  color: #000;
+  border-radius: 5px;
 }
 
 </style>

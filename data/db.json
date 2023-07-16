@@ -5,6 +5,6 @@
         {"title":"برنج" ,"id":2 ,"details":"خوراکی","price":"15000" ,"img":"../assets/t.jpeg"},
         {"title":"نان" ,"id":3 ,"details":"خوراکی","price":"15000" ,"img":"../assets/n.jpeg"},
         {"title":"پیاز" ,"id":4 ,"details":"سبزیجات","price":"15000" ,"img":"../assets/p.jpeg"},
-        {"title":"کاهو" ,"id":5 ,"details":"سبزیجات","price":"15000" ,"img":"../assets/k.jpeg"}
+        {"title":"کاهو" ,"id":5 ,"details":"سبزیجات","price":"15000" ,"img":"/home/elmira/Documents/bazargam/bazargam/bazargam/src/assets/t.jpeg"}
     ]
 }
