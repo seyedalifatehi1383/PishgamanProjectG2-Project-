@@ -1,11 +1,11 @@
 <template>
   <head>
   </head>
-  <div class="line">
-      <!-- <hr  style="width: 40%; height: 0px; margin: 35px 15px;">
+  <!-- <div class="line">
+      <hr  style="width: 40%; height: 0px; margin: 35px 15px;">
       <h2>شگفت انگیز ها </h2>
-      <hr  style="width: 40%; height: 0px; margin: 35px 15px;"> -->
-  </div>
+      <hr  style="width: 40%; height: 0px; margin: 35px 15px;">
+  </div> -->
   <div class="scrole">
       <div class="banner">
           <h2>تخفیف های <br>ویژه بازرگام</h2>
@@ -25,18 +25,14 @@
 
 <script>
   export default {
-      // props : ['fruits'],
       data(){
           return{
-          //    offFruit : this.fruits,
-             fruits : [],
-              
+             fruits : [],              
           }
       },
 
       methods : {
           clicked(fruit){
-              // console.log(fruit.name)
               this.$emit('OfferClicked',fruit)
           }
       },
@@ -55,7 +51,6 @@
   padding: 10px;
   direction: rtl;
   background-color: #51ff00;
-  /* background-image: url('../../public/images/images.jpg'); */
   overflow: auto;
   white-space: nowrap;
   display: flex;
@@ -73,7 +68,6 @@
   margin: 10px; 
   border-radius: 5px;
   text-align: center;
-  /* box-shadow: 5px 5px 5px 5px  rgb(0, 0, 0);  */
   width: 256px;
 }
 
@@ -85,7 +79,6 @@
   text-align: center;
   display: flex;
   align-items: center;
-  /* background-color: aqua; */
   margin: 15px;
 
 }
@@ -97,7 +90,6 @@
 
 .line{
   display: flex;
-  /* background-color: aqua; */
   justify-content: center;
 }
 
