@@ -1,11 +1,16 @@
 <template>
-    <div class="groups-container">
+    <div class="groups-container" v-for="">
         
     </div>
 </template>
 
 <script>
+export default {
+    data() {
 
+    },
+    
+}
 </script>
 
 <style>

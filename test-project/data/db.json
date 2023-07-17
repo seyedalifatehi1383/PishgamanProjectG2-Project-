@@ -28,5 +28,14 @@
         {"name": " خیارشور", "oldPrice": 14000, "price" :14000, "image" : "'../images/khiarshoor.jpg'", "off" :false, "grouping":"کنسرو" , "id":19},
         {"name": " تن ماهی", "oldPrice": 37000, "price" :37000, "image" : "'../images/toneMahi.jpg'", "off": false, "grouping":"کنسرو" , "id":20},
         {"name": " ترشی", "oldPrice": 50000, "price" :50000, "image" : "'../images/toroshi.jpg'", "off": false, "grouping":"کنسرو" , "id":21}
+    ],
+
+    "groups": [
+        {"name": "نان", "src" : "../src/images/bread.png", "id":1},
+        {"name": "کنسرو", "src" : "../src/images/cannedfood.png", "id":2},
+        {"name": "لبنیات", "src" : "../src/images/dairy.png", "id":3},
+        {"name": "نوشیدنی", "src" : "../src/images/drinks.png", "id":4},
+        {"name": "پروتئین", "src" : "../src/images/protein.png", "id":5},
+        {"name": "لوازم التحریر", "src" : "../src/images/stationary.png", "id":6}
     ]
 }
