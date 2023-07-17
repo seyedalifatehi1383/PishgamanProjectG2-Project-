@@ -58,8 +58,8 @@
   </div>
   <br>
   <p class="panel" >
-    <router-link to=""> خوراکی </router-link>
-    <router-link to=""> سبزیجات</router-link>
+    <router-link :to="{path: '/filter',query:{s1:stringOne}}">خوراکی</router-link>
+    <router-link :to="{path: '/filter',query:{s1:stringTwo}}"> سبزیجات</router-link>
   </p>
 </header>
 </template>
@@ -70,7 +70,10 @@ export default{
   },
   data(){
     return{
-      choseCity:false
+      choseCity:false,
+      stringOne:"خوراکی",
+      stringTwo:"سبزیجات",
+
 
     }
   }

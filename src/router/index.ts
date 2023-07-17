@@ -51,9 +51,14 @@ const router = createRouter({
       component: () => import('../components/ProductDetail.vue'),
       props:true
 
-     }
-    
+     },
+    {
+     path:'/filter',
+     name:'Filter',
+     component: () => import('../components/Filter.vue'),
+     props:true
 
+    },
   ]
 })
 
