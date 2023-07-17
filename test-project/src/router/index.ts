@@ -1,5 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "../views/Home/Home.vue";
+import IntroductionGoods from '../views/Home/BazargamDiscount/IntroductionGoods.vue'
 // import About from "../components/About.vue";
 
 const routes = [
@@ -9,6 +10,13 @@ const routes = [
     component: Home
     // component: () =>
     //   import(/*webpackChunkName: "home"*/ '../views/Home.vue')
+  },
+
+  {
+    path: "/:group/:id",
+    name: "IntroductionGoods",
+    component: IntroductionGoods,
+    props: true
   }
 ];
 
