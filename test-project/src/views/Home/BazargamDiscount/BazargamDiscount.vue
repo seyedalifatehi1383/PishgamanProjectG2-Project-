@@ -1,12 +1,10 @@
 <template>
-  <head>
-  </head>
   <!-- <div class="line">
       <hr  style="width: 40%; height: 0px; margin: 35px 15px;">
       <h2>شگفت انگیز ها </h2>
       <hr  style="width: 40%; height: 0px; margin: 35px 15px;">
   </div> -->
-  <div class="scrole">
+  <div class="scroll">
       <div class="banner">
           <h2>تخفیف های <br>ویژه بازرگام</h2>
       </div>
@@ -47,7 +45,7 @@
 </script>
 
 <style scoped>
-.scrole{
+.scroll{
   padding: 10px;
   direction: rtl;
   background-color: #51ff00;
@@ -83,7 +81,7 @@
 
 }
 
-.scrole::-webkit-scrollbar{
+.scroll::-webkit-scrollbar{
   overflow: hidden;
 
 }

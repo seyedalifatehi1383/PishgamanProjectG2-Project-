@@ -1,5 +1,5 @@
 <template>
-    <div class="introductionPage" v-for="fruit in fruits.filter((e) => e.name == id)" :key="fruit.id">
+    <div class="introductionPage" v-for="fruit in fruits.filter((e) => e.id === id)" :key="fruit.id">
         <img :src="fruit.image" alt="cant load" class="image">
         <h1 class="Title">{{ fruit.name }} </h1>
         <div class="SummaryIntroduction" >
@@ -23,7 +23,7 @@
 
 <script>
     export default {
-        props : ['id','name'],
+        props : ['id','group'],
         data(){
             return{
                 counter : 0,
@@ -46,7 +46,7 @@
         },
 
         mounted() {
-            fetch('http://localhost:3000/fruits/' + id)
+            fetch('http://localhost:3000/fruits')
                 .then(res => res.json())
                 .then(data => this.fruits = data)
                 .catch(err => console.log(err.message))

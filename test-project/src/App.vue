@@ -7,8 +7,8 @@ import ChooseCity from "./components/ChooseCity.vue";
 import { cities } from "./constants";
 
 const modalIsVisible = ref(true);
-const currentPath = ref(window.location.hash);
 
+const currentPath = ref(window.location.hash);
 window.addEventListener("hashchange", () => {
   currentPath.value = window.location.hash;
 });
