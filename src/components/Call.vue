@@ -8,11 +8,6 @@
 31020000 ( 035 ) - 2418 ( 021 )</h3>
 </template>
 
-<script>
-export default {
-
-}
-</script>
 
 <style>
 

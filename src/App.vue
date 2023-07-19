@@ -88,11 +88,11 @@ nav a:first-of-type {
   <router-view/>
 </template>
 
-<script>
+<script setup lang="ts">
 import Header from './components/Header.vue'
-export default {
-  components : {Header}
-}
+ import {useProductStore} from "./stores/productStore"
+ useProductStore();
+
 </script>
 
 <style>

@@ -1,28 +1,5 @@
 <template>
   <header > 
-  <!-- /*<button class="first">yazd</button>
-  <a href="">call</a>
-  <a href="">hlep</a>
-  <a href="">news</a>
-  <a href="">blogs</a>
-  <button class="first">sing in</button>
-  <br>
-  <img src="../assets/0035797.png" >
-  <input type="text" placeholder="srech">
-  <div class="panel">
-    <a>aaaaa</a>
-    <a @mouseout="showlist()" @mouseover="showlist()">
-      bbbbb
-      <li v-show="show" >
-        <ul>rrr</ul>
-      </li>
-    </a>
-    <a>ccccc</a>
-    <a>ddddd</a>
-    <a>eeeee</a>
-    <a>fffff</a>
-    <a>ddddd</a>
-  </div> -->
   <div id="menu">
     <div id="call">
       <a id="city" @click="choseCity=!choseCity"> 
@@ -60,19 +37,18 @@
   <p class="panel" >
     <router-link :to="{path: '/filter',query:{s1:stringOne}}">خوراکی</router-link>
     <router-link :to="{path: '/filter',query:{s1:stringTwo}}"> سبزیجات</router-link>
+    <router-link :to="{path: '/filter',query:{s1:stringThree}}"> غیر خوراکی</router-link>
   </p>
 </header>
 </template>
 
 <script>
 export default{
-  components:{
-  },
   data(){
     return{
-      choseCity:false,
       stringOne:"خوراکی",
       stringTwo:"سبزیجات",
+      stringThree:"غیر خوراکی"
 
 
     }
@@ -129,39 +105,6 @@ header {
   display: block;
 
 }
- /*#city div{
-  width: 20px;
-  height: 20px;
-  margin-top:  0px; 
-  display: inline-block;
-} */
-/* header a,button{
-margin: 10px  5px;
-padding: 10px 20px;
-text-decoration: none;
-}
- .first:hover {
-  color: #bb0c0c;
-}
-a:hover{
-  color: #bb0c0c;
-}
-header img{
-  width: 300px;
-  height: 100px;
-  float: right ;
-  margin-right: 100px;
-}
-header input{
-  margin-top: 40px;
-  margin-right: 00px;
-  margin-left: 300px;
-  width: 500px;
-  height: 20px;
-  border-radius: 5px;
-  border-color: rgb(29, 202, 29);
-  
-}*/
 .panel{
   width: 800px;
   height: 30px;

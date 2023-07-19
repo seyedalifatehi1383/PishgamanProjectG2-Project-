@@ -1,30 +1,22 @@
 <template>
-<div v-if="this.product" class="pro">
-  <h1>{{ this.product.title }}</h1>
-  <h2>{{ this.product.price }}</h2>
-  <h2>{{ this.product.details }}</h2>
-  <img :src="this.product.img"> 
+<div v-if="product" class="pro">
+  <h1>{{ product.title }}</h1>
+  <h2>{{ product.price }}</h2>
+  <h2>{{ product.details }}</h2>
+  <img :src="product.img"> 
 </div>
 </template>
 
-<script>
-export default {
-  props:['id'],
-  data(){
-    return{
-      title:'',
-      detail:'',
-      product:null
-    }
-  },
-  mounted(){
-    fetch('http://localhost:3000/products/'+this.id)
-     .then(res=>res.json())
-     .then(data => {this.product=data}
-     ).catch(err =>console.log(err.mess))
-  }
+<script setup>
+import {onMounted, ref} from 'vue'
+  const product=ref({})
+    onMounted( ()=>
+      fetch('http://localhost:3000/products/'+id)
+     .then(res =>res.json())
+     .then(data =>product.value=data)
+     .catch(err=>console.log(err))
+  )
 
-}
 </script>
 
 <style>

@@ -9,20 +9,15 @@
     </div>
 </template>
 
-<script>
-export default {
-    data(){
-      return{ 
-        products:[],
-      }
-    },
-  mounted(){
-    fetch('http://localhost:3000/products')
+<script setup>
+import {onMounted, ref} from 'vue'
+  const products=ref([])
+    onMounted( ()=>
+      fetch('http://localhost:3000/products')
      .then(res =>res.json())
-     .then(data =>this.products=data)
+     .then(data =>products.value=data)
      .catch(err=>console.log(err))
-  },
-  }
+  )
 </script>
 
 <style>
