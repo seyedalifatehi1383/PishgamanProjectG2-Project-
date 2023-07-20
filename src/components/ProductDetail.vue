@@ -4,6 +4,7 @@
   <h2>{{ product.price }}</h2>
   <h2>{{ product.details }}</h2>
   <img :src="product.img"> 
+  <router-link to="/buy" class="links"  id="buy" @click="add">افزودن به سبد خرید</router-link>
 </div>
 </template>
 
@@ -12,6 +13,9 @@
  const ProductStore = useProductStore();
  const props=defineProps<{id:string}>()
  const product=ProductStore.found(props.id)
+ function add(){
+  ProductStore.buy();
+ }
 </script>
 
 <style>

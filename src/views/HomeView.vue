@@ -1,15 +1,38 @@
 <template>
-  <div  v-for="product in ProductStore.products" :key="product.id " class="products">
+  <div class="filter">
+  <div  v-for="product in ProductStore.filtered(stringOne)" :key="product.id " class="products">
     <h1>{{product.title}}</h1>
     <h3>{{ product.price }}</h3>
     <h3>{{ product.details }}</h3>
      <router-link :to="{name:'ProductDetail',params:{id:product.id}}">خرید</router-link> 
   </div>
+</div>
+<div class="filter">
+  <div  v-for="product in ProductStore.filtered(stringTwo)" :key="product.id " class="products">
+    <h1>{{product.title}}</h1>
+    <h3>{{ product.price }}</h3>
+    <h3>{{ product.details }}</h3>
+     <router-link :to="{name:'ProductDetail',params:{id:product.id}}">خرید</router-link> 
+  </div>
+</div>
+<div class="filter"> 
+   <div  v-for="product in ProductStore.filtered(stringThree)" :key="product.id " class="products">
+    <h1>{{product.title}}</h1>
+    <h3>{{ product.price }}</h3>
+    <h3>{{ product.details }}</h3>
+     <router-link :to="{name:'ProductDetail',params:{id:product.id}}">خرید</router-link> 
+  </div>
+</div>
 </template> 
 
 <script setup lang="ts">
 import{useProductStore} from '../stores/product'
  const ProductStore = useProductStore();
+  const stringOne="خوراکی";
+     const stringTwo="سبزیجات";
+     const stringThree="غیر خوراکی";
+
+
 </script>
 
 <style>
@@ -30,5 +53,4 @@ import{useProductStore} from '../stores/product'
   color: #000;
   border-radius: 5px;
 }
-
 </style>

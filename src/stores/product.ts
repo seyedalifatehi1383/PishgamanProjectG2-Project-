@@ -11,7 +11,14 @@ export const useProductStore = defineStore('product', {
             {title:"پیاز" ,id:"4" ,details:"سبزیجات",price:"56000" ,img:"../assets/p.jpeg"},
             {title:"کاهو" ,id:"5" ,details:"سبزیجات",price:"22000" ,img:"../assets/t.jpeg"},
             {title:"مایع ظرفشویی" ,id:"6" ,details:"غیر خوراکی",price:"13000" ,img:"../assets/p.jpeg"},
-            {title: "خمیر دندان" ,id:"7",details:"غیر خوراکی",price:"70000" ,img:"../assets/t.jpeg"}
+            {title: "خمیر دندان" ,id:"7",details:"غیر خوراکی",price:"70000" ,img:"../assets/t.jpeg"},
+            {title:"پنیر" ,id:"1" ,details:"خوراکی",price:"10000" ,img:"../assets/b.jpeg"},
+            {title:"کیک" ,id:"2" ,details:"خوراکی",price:"30000" ,img:"../assets/t.jpeg"},
+            {title:"مربا" ,id:"3" ,details:"خوراکی",price:"15000" ,img:"../assets/n.jpeg"},
+            {title:"سیب زمینی" ,id:"4" ,details:"سبزیجات",price:"56000" ,img:"../assets/p.jpeg"},
+            {title:"کلم" ,id:"5" ,details:"سبزیجات",price:"22000" ,img:"../assets/t.jpeg"},
+            {title:"کیف" ,id:"6" ,details:"غیر خوراکی",price:"13000" ,img:"../assets/p.jpeg"},
+            {title: "میز" ,id:"7",details:"غیر خوراکی",price:"70000" ,img:"../assets/t.jpeg"}
         ],
         buying:[],
         product:Object,

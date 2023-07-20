@@ -26,8 +26,8 @@
         دریافت لینک اپلکیشن
       </router-link>
       <router-link to="/buy" class="links"  id="buy">
-        درخواست خرید اقساطی
-      </router-link>
+    سبد خرید       
+       </router-link>
       <router-link to="" id="singIn" class="links">
         <img src="../assets/icon3.png" alt="" width="30px" height="30px">
       </router-link>
