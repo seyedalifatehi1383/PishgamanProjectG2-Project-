@@ -7,16 +7,11 @@
 </div>
 </template>
 
-<script setup>
-import {onMounted, ref} from 'vue'
-  const product=ref({})
-    onMounted( ()=>
-      fetch('http://localhost:3000/products/'+id)
-     .then(res =>res.json())
-     .then(data =>product.value=data)
-     .catch(err=>console.log(err))
-  )
-
+<script setup lang="ts">
+ import{useProductStore} from '../stores/product'
+ const ProductStore = useProductStore();
+ const props=defineProps<{id:string}>()
+ const product=ProductStore.found(props.id)
 </script>
 
 <style>

@@ -1,21 +1,15 @@
 <template>
-  <div  v-for="product in products" :key="product.id " class="products">
+  <div  v-for="product in ProductStore.products" :key="product.id " class="products">
     <h1>{{product.title}}</h1>
     <h3>{{ product.price }}</h3>
     <h3>{{ product.details }}</h3>
-     <router-link :to="{name:'ProductDetail',query:{id:product.id}}">خرید</router-link> 
+     <router-link :to="{name:'ProductDetail',params:{id:product.id}}">خرید</router-link> 
   </div>
 </template> 
 
-<script setup>
-import {onMounted, ref} from 'vue'
-  const products=ref([])
-    onMounted( ()=>
-      fetch('http://localhost:3000/products')
-     .then(res =>res.json())
-     .then(data =>products.value=data)
-     .catch(err=>console.log(err))
-  )
+<script setup lang="ts">
+import{useProductStore} from '../stores/product'
+ const ProductStore = useProductStore();
 </script>
 
 <style>

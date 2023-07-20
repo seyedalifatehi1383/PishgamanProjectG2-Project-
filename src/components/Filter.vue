@@ -1,6 +1,6 @@
 <template>
-    <div  v-for="product in products"  :key="product.id " id="pro" >
-        <div v-if="product.details===$route.query.s1"  class="products">
+    <div  v-for="product in ProductStore.filtered($route.query.s1)"  :key="product.id " id="pro" >
+        <div class="products">
       <h1>{{product.title}}</h1>
       <h3>{{ product.price }}</h3>
       <h3>{{ product.details }}</h3>
@@ -10,14 +10,8 @@
 </template>
 
 <script setup>
-import {onMounted, ref} from 'vue'
-  const products=ref([])
-    onMounted( ()=>
-      fetch('http://localhost:3000/products')
-     .then(res =>res.json())
-     .then(data =>products.value=data)
-     .catch(err=>console.log(err))
-  )
+  import{useProductStore} from '../stores/product'
+ const ProductStore = useProductStore();
 </script>
 
 <style>
