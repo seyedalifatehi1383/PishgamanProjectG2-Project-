@@ -70,15 +70,15 @@ header {
   height: 40px;
   float:right;
   text-align: center;
- border-radius: 15px;
- margin: 30px;
- padding-top:10px;
+  border-radius: 15px;
+  margin: 30px;
+  padding-top:10px;
 }
 #callNum{
   color: #000;
   float:right;
   margin: 30px;
- text-decoration: none;
+  text-decoration: none;
 }
 #callNum:hover{
   color: red;
