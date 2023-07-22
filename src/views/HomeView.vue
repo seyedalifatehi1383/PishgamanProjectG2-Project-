@@ -6,6 +6,7 @@
     <h3>{{ product.details }}</h3>
      <router-link :to="{name:'ProductDetail',params:{id:product.id}}">خرید</router-link> 
   </div>
+  <!-- <div class="som"></div> -->
 </div>
 <div class="filter">
   <div  v-for="product in ProductStore.filtered(stringTwo)" :key="product.id " class="products">
@@ -53,4 +54,5 @@ import{useProductStore} from '../stores/product'
   color: #000;
   border-radius: 5px;
 }
+
 </style>

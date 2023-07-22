@@ -49,8 +49,6 @@ export default{
       stringOne:"خوراکی",
       stringTwo:"سبزیجات",
       stringThree:"غیر خوراکی"
-
-
     }
   }
 }
