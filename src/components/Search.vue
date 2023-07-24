@@ -5,7 +5,7 @@
       <p> {{ pro.title}}</p>
        <p> {{ pro.price }}</p>
        <p> {{ pro.details }}</p>
-       <p> <router-link :to="{name:'ProductDetail',params:{id:pro.id}}">خرید</router-link> </p>
+       <p> <router-link :to="{name:'ProductDetail',params:{id:pro.id}}" >خرید</router-link> </p>
     </div>
   </div>
 
@@ -40,8 +40,13 @@ input{
 .product{
   background-color: aqua;
   width: 400px;
-  height: 200px;
+  height: 100px;
+  padding: 5 px;
+    float: center ;
+    margin: 10px 400px;
+    overflow-y:scroll;
 }
+
 .product p{
     padding: 5 px;
 }
