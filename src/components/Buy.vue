@@ -8,11 +8,11 @@
 </template> 
 
 <script setup lang="ts">
-import{useProductStore} from '../stores/product'
- const ProductStore = useProductStore();
+import { useProductStore } from '../stores/product'
+const ProductStore = useProductStore();
 </script>
 
-<style>
+<style scoped>
 .products{
   background-color: rgb(196, 255, 228);
   display: inline-block;

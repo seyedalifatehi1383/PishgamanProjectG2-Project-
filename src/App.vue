@@ -116,8 +116,6 @@ nav a:first-of-type {
   <Header />
 
   <router-view/>
-
-  <Footer />
 </template>
 
 <script setup lang="ts">
@@ -125,7 +123,6 @@ import { ref } from 'vue';
 import { RouterView, RouterLink } from "vue-router";
 
 import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
 import ChooseCity from './components/ChooseCity.vue'
 import { useProductStore } from "./stores/product"
 const ProductStore = useProductStore();

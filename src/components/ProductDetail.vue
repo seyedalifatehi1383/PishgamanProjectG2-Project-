@@ -18,7 +18,7 @@
  }
 </script>
 
-<style>
+<style scoped>
 .pro{
   text-align: center;
   background-color: rgb(31, 177, 104);
