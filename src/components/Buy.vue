@@ -1,10 +1,11 @@
 <template>
-  <div  v-for="product in ProductStore.buying" :key="product.id " class="products">
+  <div  v-for="product in ProductStore.buying" :key="product.id" class="products">
     <h1>{{product.title}}</h1>
     <h3>{{ product.price }}</h3>
     <h3>{{ product.details }}</h3>
-     <router-link :to="{name:'ProductDetail',params:{id:product.id}}">خرید</router-link> 
+    <router-link to="/buy" class="links"  id="buy" @click="ProductStore.removed(product.id)">حذف از سبد خرید</router-link>
   </div>
+
 </template> 
 
 <script setup lang="ts">

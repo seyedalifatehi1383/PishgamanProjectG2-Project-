@@ -34,6 +34,12 @@
     </div>
   </div>
   <br>
+  <div >
+
+
+    <Sreach/>
+  </div>
+  <br>
   <p class="panel" >
     <router-link :to="{path: '/filter',query:{s1:stringOne}}">خوراکی</router-link>
     <router-link :to="{path: '/filter',query:{s1:stringTwo}}"> سبزیجات</router-link>
@@ -43,14 +49,14 @@
 </template>
 
 <script>
+import Sreach from './Search.vue'
 export default{
+  components:{Sreach},
   data(){
     return{
       stringOne:"خوراکی",
       stringTwo:"سبزیجات",
       stringThree:"غیر خوراکی"
-
-
     }
   }
 }
@@ -109,7 +115,7 @@ header {
   width: 800px;
   height: 30px;
   background-color: white;
-  margin-top: 100px;
+  margin-top: 15px;
   margin-left: 200px;
   border-radius: 20px;
   padding: 15px;
