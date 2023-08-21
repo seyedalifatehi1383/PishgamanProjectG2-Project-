@@ -70,10 +70,10 @@ export const productsStore = defineStore('product', {
                 },
                 {
                     id: 4,
-                    title:'پاپ کرن سرکه ای مزمز',
+                    title:'چیپس ماست و موسیر مزمز',
                     weight:'60گرمی',
-                    src: "../../public/pap.jpg",
-                    price: 160000,
+                    src: "../../public/mos.jpg",
+                    price: 150000,
                     gg: 'first'
                 },
                 {
@@ -83,26 +83,29 @@ export const productsStore = defineStore('product', {
                     src: "../../public/pap.jpg",
                     price: 160000,
                     gg: 'first'
-                },{
+                },
+                {
                     id: 6,
-                    title:'پاپ کرن سرکه ای مزمز',
+                    title:'پاپ کرن نمکی مزمز',
                     weight:'60گرمی',
-                    src: "../../public/pap.jpg",
+                    src: "../../public/ppp.jpg",
                     price: 160000,
                     gg: 'first'
-                },{
+                },
+                {
                     id: 7,
-                    title:'پاپ کرن سرکه ای مزمز',
+                    title:'چیپس لیمویی مزمز',
                     weight:'60گرمی',
-                    src: "../../public/pap.jpg",
-                    price: 160000,
+                    src: "../../public/li.jpg",
+                    price: 150000,
                     gg: 'first'
-                },{
+                },
+                {
                     id: 8,
-                    title:'پاپ کرن سرکه ای مزمز',
-                    weight:'60گرمی',
-                    src: "../../public/pap.jpg",
-                    price: 160000,
+                    title:'چیپس سوپرمزمز',
+                    weight:'65گرمی',
+                    src: "../../public/per.jpg",
+                    price: 150000,
                     gg: 'first'
                 },
                 {
